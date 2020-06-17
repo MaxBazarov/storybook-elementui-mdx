@@ -1,41 +1,88 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 import Button from './Button';
-import Example from './example.vue';
 
-<Meta title="4 - Components/Basic/Button" component={Button, Example} />
+<Meta title="4 - Components/Basic/Button" component={Button} />
 
 # Button
-
+## Types
 
 <Preview>
-  <Story name="Default">
+  <Story name="Type: Default">
     {{ 
       components: { Button },                     
       template: '<Button type="default">Default</Button>'
     }}
   </Story>
-   <Story name="Primary">
+   <Story name="Type: Primary">
     {{ 
       components: { Button },                     
       template: '<Button type="primary">Primary</Button>'
     }}
   </Story>
-  <Story name="Warning">
+  <Story name="Type: Warning">
     {{ 
       components: { Button },                     
       template: '<Button type="warning">Warning</Button>'
     }}
   </Story>
-  <Story name="Danger">
+  <Story name="Type: Danger">
     {{ 
       components: { Button },                     
       template: '<Button type="danger">Danger</Button>'
     }}
   </Story>
-  <Story name="EXAMPLE">
-     {{
-       components: { Example },
-       template: `<Example>Example.vue</Example>`
-     }}
+  <Story name="Type: Success">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="success">Success</Button>'
+    }}
   </Story>
 </Preview>
+
+## Sizes
+
+<Preview>
+  <Story name="Size: Large">
+    {{ 
+      components: { Button },                     
+      template: '<Button size="large">Large</Button>'
+    }}
+  </Story>
+   <Story name="Size: Medium">
+    {{ 
+      components: { Button },                     
+      template: '<Button size="medium">Medium</Button>'
+    }}
+  </Story>
+  <Story name="Size: Small">
+    {{ 
+      components: { Button },                     
+      template: '<Button size="small">Small</Button>'
+    }}
+  </Story>  
+</Preview>
+
+## Visual Types
+
+<Preview>
+  <Story name="Visual: Regular">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="primary">Regular</Button>'
+    }}
+  </Story>
+   <Story name="Visual: Plain">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="primary" plain="true">Plain</Button>'
+    }}
+  </Story>
+  <Story name="Visual: Text">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="text primary">Text</Button>'
+    }}
+  </Story>
+  
+</Preview>
+
