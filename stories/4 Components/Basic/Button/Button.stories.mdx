@@ -1,0 +1,41 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import Button from './Button';
+import Example from './example.vue';
+
+<Meta title="4 - Components/Basic/Button" component={Button, Example} />
+
+# Button
+
+
+<Preview>
+  <Story name="Default">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="default">Default</Button>'
+    }}
+  </Story>
+   <Story name="Primary">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="primary">Primary</Button>'
+    }}
+  </Story>
+  <Story name="Warning">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="warning">Warning</Button>'
+    }}
+  </Story>
+  <Story name="Danger">
+    {{ 
+      components: { Button },                     
+      template: '<Button type="danger">Danger</Button>'
+    }}
+  </Story>
+  <Story name="EXAMPLE">
+     {{
+       components: { Example },
+       template: `<Example>Example.vue</Example>`
+     }}
+  </Story>
+</Preview>
