@@ -1,33 +1,32 @@
 {
-  "name": "elementUIstorybook",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook  -s ./public -c .storybook -o .out"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@storybook/addon-docs": "^5.3.19",
-    "element-ui": "^2.13.2",
-    "vue": "^2.6.11",
-    "vue-loader": "^15.9.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/vue": "^5.3.19",
-    "@vue/babel-preset-app": "^4.4.1",
-    "babel-loader": "^8.1.0",
-    "babel-preset-vue": "^2.0.2",
-    "react": "16.13.1",
-    "react-is": "16.13.1"
-  }
+    "name": "elementUIstorybook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "start-storybook -s ./public -p 6006",
+        "build-storybook": "build-storybook  -s ./public -c .storybook -o .out"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@storybook/addon-docs": "^6.1.14",
+        "element-ui": "^2.14.1",
+        "vue": "^2.6.11",
+        "vue-loader": "^15.9.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@storybook/addon-actions": "^6.1.14",
+        "@storybook/addon-links": "^6.1.14",
+        "@storybook/addons": "^6.1.14",
+        "@storybook/vue": "^6.1.14",
+        "babel-loader": "^8.1.0",
+        "babel-preset-vue": "^2.0.2",
+        "react": "17.0.1",
+        "react-is": "17.0.1"
+    }
 }
