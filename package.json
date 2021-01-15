@@ -14,7 +14,7 @@
     "dependencies": {
         "@storybook/addon-docs": "^6.1.14",
         "element-ui": "^2.14.1",
-        "vue": "^2.6.11",
+        "vue": "^3.0.5",
         "vue-loader": "^15.9.2",
         "vue-template-compiler": "^2.6.11"
     },
@@ -24,7 +24,7 @@
         "@storybook/addon-links": "^6.1.14",
         "@storybook/addons": "^6.1.14",
         "@storybook/vue": "^6.1.14",
-        "babel-loader": "^8.1.0",
+        "babel-loader": "^8.2.2",
         "babel-preset-vue": "^2.0.2",
         "react": "17.0.1",
         "react-is": "17.0.1"
