@@ -1,5 +1,6 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 import CBButton from './CBButton';
+import CBSpan from './CBSpan';
 
 <Meta title="4 - Components/Basic/Button" component={CBButton} />
 
@@ -12,19 +13,25 @@ There are three groups of buttons visual look:
 2. Regular button: A button made of ink and does not lift. Choose it inside clickable containers, such as [Home Tile](/ui-kit/views/tile/home) or [On-Screen Notification](/app-kit/common/notifications/visualization#on-screen-notifications)
 3. Text buttons: TODO
 
-The every button also can be aligned on left, center, or right. 
-
-Also button content can include: Text, Icon, Action menu icon.
-
+Also the next button properties can be specified:   
+ Align: left, center, right
+ Size: large, medium, small
+ Content: text, icon, menu icon
 
 # Visual Look 
 ### Plain Buttons
     
 <Preview>
+<Story name="Plain">
+    {{ 
+      components: { CBSpan },                     
+      template: '<CBSpan>Plain buttons</CBSpan>'
+    }}
+  </Story>
 <Story name="PlainPrimary">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="primary" plain>Default</CBButton>'
+      template: '<CBButton type="primary" plain>Primary</CBButton>'
     }}
   </Story>
   <Story name="PlainDefault">
@@ -53,7 +60,7 @@ Also button content can include: Text, Icon, Action menu icon.
 <Story name="RegularPrimary">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="primary">Default</CBButton>'
+      template: '<CBButton type="primary">Primary</CBButton>'
     }}
   </Story>
   <Story name="RegularDefault">
@@ -82,7 +89,7 @@ Also button content can include: Text, Icon, Action menu icon.
 <Story name="TextPrimary">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="text primary">Default</CBButton>'
+      template: '<CBButton type="text primary">Primary</CBButton>'
     }}
   </Story>
   <Story name="TextDefault">
@@ -101,6 +108,28 @@ Also button content can include: Text, Icon, Action menu icon.
     {{ 
       components: { CBButton },                     
       template: '<CBButton type="text danger">Danger</CBButton>'
+    }}
+  </Story>
+</Preview>
+
+## Sizes
+<Preview>
+<Story name="SizeLarge">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton>Large</CBButton>'
+    }}
+</Story>
+<Story name="SizeMedium">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton size="medium">Medium</CBButton>'
+    }}
+</Story>
+<Story name="SizeSmall"> 
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton size="small">Small</CBButton>'
     }}
   </Story>
 </Preview>

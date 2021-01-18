@@ -5,12 +5,12 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Element);
 
 export default {
-    name: 'cbbuton',
-    props: ['type', 'plain', 'size'],
+    name: 'cbspan',
+    props: [],
     template: `
-    <el-button @click="onClick" :type="type" :plain="plain" :size="size">
+    <span>
       <slot></slot>
-    </el-button>
+    </span>
   `,
 
     methods: {
