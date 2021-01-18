@@ -24,7 +24,7 @@ Also the next button properties can be specified:
     <Story name="Plain">
         {{ 
         components: { CBSpan },                     
-        template: '<CBSpan>Plain buttons</CBSpan>'
+        template: '<CBSpan>Plain buttons:</CBSpan>'
         }}
     </Story>
     <Story name="PlainPrimary">
@@ -57,7 +57,7 @@ Also the next button properties can be specified:
     <Story name="Regular">
         {{ 
         components: { CBSpan },                     
-        template: '<CBSpan>Regular buttons</CBSpan>'
+        template: '<CBSpan>Regular buttons:</CBSpan>'
         }}
     </Story> 
     <Story name="RegularPrimary">
@@ -82,6 +82,104 @@ Also the next button properties can be specified:
         {{ 
             components: { CBButton },                     
             template: '<el-button type="danger">Danger</el-button>'
+        }}
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Text">
+        {{ 
+        components: { CBSpan },                     
+        template: '<CBSpan>Text buttons:</CBSpan>'
+        }}
+    </Story> 
+    <Story name="TextPrimary">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="text primary">Primary</el-button>'
+        }}
+    </Story>
+    <Story name="TextDefault">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="text default">Default</el-button>'
+        }}
+    </Story>
+    <Story name="TextWarning">
+        {{ 
+            components: { CBButton },                     
+            template: '<el-button type="text warning">Warning</el-button>'
+            }}
+    </Story>
+    <Story name="TextDanger">
+        {{ 
+            components: { CBButton },                     
+            template: '<el-button type="text danger">Danger</el-button>'
+        }}
+    </Story>
+</Preview>
+
+
+# Sizes
+    
+<Preview>
+    <Story name="Size">
+        {{ 
+        components: { CBSpan },                     
+        template: '<CBSpan>Sizes:</CBSpan>'
+        }}
+    </Story>
+    <Story name="SizeLarge">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="primary">Large</el-button>'
+        }}
+    </Story>
+    <Story name="SizeMedium">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="primary" size="large">Medium</el-button>'
+        }}
+    </Story>
+    <Story name="SizeSmall">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="primary" size="small">Small</el-button>'
+        }}
+    </Story>
+</Preview>
+
+# Content
+    
+<Preview>
+    <Story name="Content">
+        {{ 
+        components: { CBSpan },                     
+        template: '<CBSpan>Content:</CBSpan>'
+        }}
+    </Story> 
+     <Story name="ContentText">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default">Text</el-button>'
+        }}
+    </Story>
+    <Story name="ContentIcon">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default" icon="el-icon-fa-share fas"></el-button>'
+        }}
+    </Story>
+     <Story name="ContentIconText">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default" icon="el-icon-fa-share fas">Icon+Text</el-button>'
+        }}
+    </Story>
+    <Story name="ContentTextActions">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default">Text+Actions<i class="el-icon-fa-angle-down fas el-icon--right"></el-button>'
         }}
     </Story>
 </Preview>
