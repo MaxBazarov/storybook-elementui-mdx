@@ -1,8 +1,7 @@
-import CBButton from '../4 Components/Basic/Button/CBButton'
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 
 
-<Meta title="6 - Content Guidelines/Naming" component={CBButton}/>
+<Meta title="6 - Content Guidelines/Naming" component={el-button}/>
 
 # Naming
 
@@ -30,27 +29,6 @@ Use brief but meaningful text that explains what happens after the users clicks 
 Do not use "(s)" or "(es)" after nouns to indicate singular or plural. Use the plural if there is a possibility of more than one. For example, Add Selected Plans, not ~~Add Selected Plan(s)~~.
 
 Examples:
-
-<Preview>
-  <Story name="btn1"> 
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Save</CBButton>'
-    }}    
-    </Story>
-     <Story name="btn2"> 
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Unassign</CBButton>'
-    }}    
-    </Story>
-     <Story name="btn2">    
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Assign Service</CBButton>'
-    }}    
-    </Story>
-</Preview>
 
 ## Links in the Text
 If you have a hyperlink that follows some explanatory or introductory text in the GUI, treat such links as usual sentences: capitalize the first word and put a period at the end (and period should not be included into the link).

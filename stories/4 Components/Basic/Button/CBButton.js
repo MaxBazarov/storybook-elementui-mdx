@@ -5,7 +5,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Element);
 
 export default {
-    name: 'cbbuton',
+    name: 'CBButton',
     props: ['type', 'plain', 'size'],
     template: `
     <el-button @click="onClick" :type="type" :plain="plain" :size="size">

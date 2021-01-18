@@ -19,117 +19,69 @@ Also the next button properties can be specified:
  Content: text, icon, menu icon
 
 # Visual Look 
-### Plain Buttons
     
 <Preview>
-<Story name="Plain">
-    {{ 
-      components: { CBSpan },                     
-      template: '<CBSpan>Plain buttons</CBSpan>'
-    }}
-  </Story>
-<Story name="PlainPrimary">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary" plain>Primary</CBButton>'
-    }}
-  </Story>
-  <Story name="PlainDefault">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="default" plain>Default</CBButton>'
-    }}
-  </Story>
-  <Story name="PlainWarning">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="warning" plain>Warning</CBButton>'
-    }}
-  </Story>
-  <Story name="PlainDanger">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="danger" plain>Danger</CBButton>'
-    }}
-  </Story>
+    <Story name="Plain">
+        {{ 
+        components: { CBSpan },                     
+        template: '<CBSpan>Plain buttons</CBSpan>'
+        }}
+    </Story>
+    <Story name="PlainPrimary">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="primary" plain>Primary</el-button>'
+        }}
+    </Story>
+    <Story name="PlainDefault">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default" plain>Default</el-button>'
+        }}
+    </Story>
+    <Story name="PlainWarning">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="warning" plain>Warning</el-button>'
+        }}
+    </Story>
+    <Story name="PlainDanger">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="danger" plain>Danger</el-button>'
+        }}
+    </Story>
 </Preview>
 
-### Regular Buttons
-        
 <Preview>
-<Story name="RegularPrimary">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Primary</CBButton>'
-    }}
-  </Story>
-  <Story name="RegularDefault">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="default">Default</CBButton>'
-    }}
-  </Story>
-  <Story name="RegularWarning">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="warning">Warning</CBButton>'
-    }}
-  </Story>
-  <Story name="RegularDanger">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="danger">Danger</CBButton>'
-    }}
-  </Story>
-</Preview>
-
-### Text Buttons
-        
-<Preview>
-<Story name="TextPrimary">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="text primary">Primary</CBButton>'
-    }}
-  </Story>
-  <Story name="TextDefault">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="text default">Default</CBButton>'
-    }}
-  </Story>
-  <Story name="TextWarning">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="text warning">Warning</CBButton>'
-    }}
-  </Story>
-  <Story name="-TextDanger">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="text danger">Danger</CBButton>'
-    }}
-  </Story>
-</Preview>
-
-## Sizes
-<Preview>
-<Story name="SizeLarge">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton>Large</CBButton>'
-    }}
-</Story>
-<Story name="SizeMedium">
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton size="medium">Medium</CBButton>'
-    }}
-</Story>
-<Story name="SizeSmall"> 
-    {{ 
-      components: { CBButton },                     
-      template: '<CBButton size="small">Small</CBButton>'
-    }}
-  </Story>
+    <Story name="Regular">
+        {{ 
+        components: { CBSpan },                     
+        template: '<CBSpan>Regular buttons</CBSpan>'
+        }}
+    </Story> 
+    <Story name="RegularPrimary">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="primary">Primary</el-button>'
+        }}
+    </Story>
+    <Story name="RegularDefault">
+        {{ 
+        components: { CBButton },                     
+        template: '<el-button type="default">Default</el-button>'
+        }}
+    </Story>
+    <Story name="RegularWarning">
+        {{ 
+            components: { CBButton },                     
+            template: '<el-button type="warning">Warning</el-button>'
+            }}
+    </Story>
+    <Story name="RegularDanger">
+        {{ 
+            components: { CBButton },                     
+            template: '<el-button type="danger">Danger</el-button>'
+        }}
+    </Story>
 </Preview>
