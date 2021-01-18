@@ -18,36 +18,36 @@ Also button content can include: Text, Icon, Action menu icon.
 
 
 # Visual Look 
-## Plain Buttons
+### Plain Buttons
     
 <Preview>
 <Story name="PlainPrimary">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="primary">Default</CBButton>'
+      template: '<CBButton type="primary" plain>Default</CBButton>'
     }}
   </Story>
   <Story name="PlainDefault">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="default">Default</CBButton>'
+      template: '<CBButton type="default" plain>Default</CBButton>'
     }}
   </Story>
   <Story name="PlainWarning">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="warning">Warning</CBButton>'
+      template: '<CBButton type="warning" plain>Warning</CBButton>'
     }}
   </Story>
   <Story name="PlainDanger">
     {{ 
       components: { CBButton },                     
-      template: '<CBButton type="danger">Danger</CBButton>'
+      template: '<CBButton type="danger" plain>Danger</CBButton>'
     }}
   </Story>
 </Preview>
 
-## Regular Buttons
+### Regular Buttons
         
 <Preview>
 <Story name="RegularPrimary">
@@ -72,6 +72,35 @@ Also button content can include: Text, Icon, Action menu icon.
     {{ 
       components: { CBButton },                     
       template: '<CBButton type="danger">Danger</CBButton>'
+    }}
+  </Story>
+</Preview>
+
+### Text Buttons
+        
+<Preview>
+<Story name="TextPrimary">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton type="text primary">Default</CBButton>'
+    }}
+  </Story>
+  <Story name="TextDefault">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton type="text default">Default</CBButton>'
+    }}
+  </Story>
+  <Story name="TextWarning">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton type="text warning">Warning</CBButton>'
+    }}
+  </Story>
+  <Story name="-TextDanger">
+    {{ 
+      components: { CBButton },                     
+      template: '<CBButton type="text danger">Danger</CBButton>'
     }}
   </Story>
 </Preview>

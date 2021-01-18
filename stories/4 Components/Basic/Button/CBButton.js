@@ -6,9 +6,9 @@ Vue.use(Element);
 
 export default {
     name: 'cbbuton',
-    props: ['type'],
+    props: ['type', 'plain'],
     template: `
-    <el-button @click="onClick" :type="type" >
+    <el-button @click="onClick" :type="type" :plain="plain" >
       <slot></slot>
     </el-button>
   `,
