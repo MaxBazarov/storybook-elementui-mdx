@@ -23,7 +23,6 @@ module.exports = {
         }],
 
     webpack: async config => {
-        return config;
         const rules = config.module.rules;
         const mdxRules = rules.filter(
             filterRules([/\.mdx$/, /\.(stories|story).mdx$/])
