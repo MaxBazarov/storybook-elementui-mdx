@@ -1,0 +1,56 @@
+import { Meta, Preview, Story, Canvas } from '@storybook/addon-docs/blocks';
+import "./CBRadio.js";
+
+<Meta title="4 - Components/Form/Radio" />
+
+# Introduction
+
+The next radio properties can be specified:    
+Size: large, medium, small 
+Type:regular, with border, button-style
+
+<b>TODO: fix broken JS here</b>
+
+# Regular radio
+    
+<Preview>    
+    <Story name="Regular">
+        {{ template: `
+        <div>
+            <el-radio  label="1" class="cb-size-large" size="large">Large</el-radio>
+            <el-radio  label="2" class="cb-size-medium" size="medium">Medium</el-radio>
+            <el-radio  label="3" class="cb-size-small" size="small">Small</el-radio>
+        </div>
+        `
+        }}
+    </Story>     
+</Preview>
+
+# Other radios
+    
+<Preview>    
+    <Story name="OtherBorder1">
+        {{ 
+        template: `
+        <el-radio border label="1">Radio with border 1</el-radio>
+        <el-radio border label="2">Radio with border 2</el-radio>  
+        `
+        }}
+    </Story>      
+    <Story name="OtherBorder2">
+        {{ 
+        template: '<el-radio border label="2">Radio with border</el-radio>'
+        }}
+    </Story>      
+     <Story name="Other">
+        {{ 
+        template: `
+         <el-radio-group size="small">
+            <el-radio-button label="Button-like radio"></el-radio-button>
+            <el-radio-button label="Radio 2"></el-radio-button>
+            <el-radio-button label="Radio 3"></el-radio-button>
+        </el-radio-group>
+`
+        }}
+    </Story>  
+</Preview>

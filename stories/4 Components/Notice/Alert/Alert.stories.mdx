@@ -1,33 +1,15 @@
-import { Meta, Preview, Story,ArgsTable } from '@storybook/addon-docs/blocks';
-import CBAlert from './CBAlert';
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import Vue from 'vue';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
-<ArgsTable of={CBAlert} />
-
-<Meta title="4 - Components/Notice/Alert" 
-    component={CBAlert} 
-    argTypes={{    
-    label: {
-      name: 'Title Text',
-      description: 'Text shown by Alert',
-      control: {
-        type: 'text'
-      },
-      table: {
-        type: {
-          summary: 'The title content',
-          detail: 'Text displayed by the title'
-        }
-      }
-    }
-  }}
-/>
+<Meta title="4 - Components/Notice/Alert"/>
 
 # Alert types
 
-<Preview>
+<Preview>   
     <Story name="TypeSuccess">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Success alert"
@@ -41,7 +23,6 @@ import CBAlert from './CBAlert';
     </Story>   
      <Story name="TypeInfo">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Info alert"
@@ -55,7 +36,6 @@ import CBAlert from './CBAlert';
     </Story>    
      <Story name="TypeWarning">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Warning alert"
@@ -69,7 +49,6 @@ import CBAlert from './CBAlert';
     </Story> 
      <Story name="TypeError">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Error alert"
@@ -88,7 +67,6 @@ import CBAlert from './CBAlert';
 <Preview>
     <Story name="IconOn">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Alert"
@@ -102,7 +80,6 @@ import CBAlert from './CBAlert';
     </Story>  
     <Story name="IconOff">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="success alert"
@@ -120,7 +97,6 @@ import CBAlert from './CBAlert';
 <Preview>
     <Story name="DescriptionOn">
         {{ 
-        components: { CBAlert },                     
         template: `
         <el-alert
             title="Alert with description"
@@ -134,7 +110,6 @@ import CBAlert from './CBAlert';
     </Story>  
     <Story name="DescriptionOff">
         {{ 
-        components: { CBAlert },                     
         template: `
          <el-alert
             title="Alert without description"

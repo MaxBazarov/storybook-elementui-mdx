@@ -1,8 +1,6 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
-import CBButton from './CBButton';
-import CBSpan from './CBSpan';
 
-<Meta title="4 - Components/Basic/Button" component={CBButton} />
+<Meta title="4 - Components/Basic/Button" />
 
 # Introduction
 
@@ -23,31 +21,30 @@ Also the next button properties can be specified:
 <Preview>
     <Story name="Plain">
         {{ 
-        components: { CBSpan },                     
-        template: '<CBSpan>Plain buttons:</CBSpan>'
+        template: '<div>Plain buttons:</div>'
         }}
     </Story>
     <Story name="PlainPrimary">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="primary" plain>Primary</el-button>'
         }}
     </Story>
     <Story name="PlainDefault">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default" plain>Default</el-button>'
         }}
     </Story>
     <Story name="PlainWarning">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="warning" plain>Warning</el-button>'
         }}
     </Story>
     <Story name="PlainDanger">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="danger" plain>Danger</el-button>'
         }}
     </Story>
@@ -56,31 +53,31 @@ Also the next button properties can be specified:
 <Preview>
     <Story name="Regular">
         {{ 
-        components: { CBSpan },                     
+        
         template: '<CBSpan>Regular buttons:</CBSpan>'
         }}
     </Story> 
     <Story name="RegularPrimary">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="primary">Primary</el-button>'
         }}
     </Story>
     <Story name="RegularDefault">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default">Default</el-button>'
         }}
     </Story>
     <Story name="RegularWarning">
         {{ 
-            components: { CBButton },                     
+            
             template: '<el-button type="warning">Warning</el-button>'
             }}
     </Story>
     <Story name="RegularDanger">
         {{ 
-            components: { CBButton },                     
+            
             template: '<el-button type="danger">Danger</el-button>'
         }}
     </Story>
@@ -89,31 +86,31 @@ Also the next button properties can be specified:
 <Preview>
     <Story name="Text">
         {{ 
-        components: { CBSpan },                     
+        
         template: '<CBSpan>Text buttons:</CBSpan>'
         }}
     </Story> 
     <Story name="TextPrimary">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="text primary">Primary</el-button>'
         }}
     </Story>
     <Story name="TextDefault">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="text default">Default</el-button>'
         }}
     </Story>
     <Story name="TextWarning">
         {{ 
-            components: { CBButton },                     
+            
             template: '<el-button type="text warning">Warning</el-button>'
             }}
     </Story>
     <Story name="TextDanger">
         {{ 
-            components: { CBButton },                     
+            
             template: '<el-button type="text danger">Danger</el-button>'
         }}
     </Story>
@@ -125,25 +122,25 @@ Also the next button properties can be specified:
 <Preview>
     <Story name="Size">
         {{ 
-        components: { CBSpan },                     
+        
         template: '<CBSpan>Sizes:</CBSpan>'
         }}
     </Story>
     <Story name="SizeLarge">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="primary">Large</el-button>'
         }}
     </Story>
     <Story name="SizeMedium">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="primary" size="medium">Medium</el-button>'
         }}
     </Story>
     <Story name="SizeSmall">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="primary" size="small">Small</el-button>'
         }}
     </Story>
@@ -154,31 +151,31 @@ Also the next button properties can be specified:
 <Preview>
     <Story name="Content">
         {{ 
-        components: { CBSpan },                     
+        
         template: '<CBSpan>Content:</CBSpan>'
         }}
     </Story> 
      <Story name="ContentText">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default">Text</el-button>'
         }}
     </Story>
     <Story name="ContentIcon">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default" icon="el-icon-fa-share fas"></el-button>'
         }}
     </Story>
      <Story name="ContentIconText">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default" icon="el-icon-fa-share fas">Icon+Text</el-button>'
         }}
     </Story>
     <Story name="ContentTextActions">
         {{ 
-        components: { CBButton },                     
+        
         template: '<el-button type="default">Text+Actions<i class="el-icon-fa-angle-down fas el-icon--right"/></el-button>'
         }}
     </Story>

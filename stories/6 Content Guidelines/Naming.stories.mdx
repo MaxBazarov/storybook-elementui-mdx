@@ -1,5 +1,4 @@
 import { Meta, Preview, Story, Canvas } from '@storybook/addon-docs/blocks';
-import CBButton from '../4 Components/Basic/Button/CBButton'
 
 <Meta title="6 - Content Guidelines/Naming"/>
 
@@ -33,20 +32,17 @@ Examples:
 <Preview>
   <Story name="btn1"> 
     {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Save</CBButton>'
+      template: '<el-button type="primary">Save</el-button>'
     }}    
     </Story>
      <Story name="btn2"> 
     {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Unassign</CBButton>'
+      template: '<el-button type="primary">Unassign</el-button>'
     }}    
     </Story>
      <Story name="btn3">    
     {{ 
-      components: { CBButton },                     
-      template: '<CBButton type="primary">Assign Service</CBButton>'
+      template: '<el-button type="primary">Assign Service</el-button>'
     }}    
     </Story>
 </Preview>
