@@ -1,0 +1,148 @@
+import { Meta, Preview, Story,ArgsTable } from '@storybook/addon-docs/blocks';
+import CBAlert from './CBAlert';
+
+<ArgsTable of={CBAlert} />
+
+<Meta title="4 - Components/Notice/Alert" 
+    component={CBAlert} 
+    argTypes={{    
+    label: {
+      name: 'Title Text',
+      description: 'Text shown by Alert',
+      control: {
+        type: 'text'
+      },
+      table: {
+        type: {
+          summary: 'The title content',
+          detail: 'Text displayed by the title'
+        }
+      }
+    }
+  }}
+/>
+
+# Alert types
+
+<Preview>
+    <Story name="TypeSuccess">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Success alert"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>   
+     <Story name="TypeInfo">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Info alert"
+            type="info"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>    
+     <Story name="TypeWarning">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Warning alert"
+            type="warning"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story> 
+     <Story name="TypeError">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Error alert"
+            type="error"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story> 
+</Preview>
+
+# Alert with icon and without
+
+<Preview>
+    <Story name="IconOn">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Alert"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+    <Story name="IconOff">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="success alert"
+            type="success"
+            description="more text description"
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+</Preview>
+
+# Alert with description and without
+
+<Preview>
+    <Story name="DescriptionOn">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+        <el-alert
+            title="Alert with description"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+    <Story name="DescriptionOff">
+        {{ 
+        components: { CBAlert },                     
+        template: `
+         <el-alert
+            title="Alert without description"
+            type="success"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+</Preview>

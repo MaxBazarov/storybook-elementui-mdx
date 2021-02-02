@@ -23,6 +23,7 @@ module.exports = {
         }],
 
     webpack: async config => {
+        return config;
         const rules = config.module.rules;
         const mdxRules = rules.filter(
             filterRules([/\.mdx$/, /\.(stories|story).mdx$/])
@@ -43,8 +44,6 @@ module.exports = {
             cacheDirectory: path.resolve(__dirname, '..', 'node_modules', '.cache', 'storybook'),
             presets: ['@vue/app'],
             babelrc: false
-        }
-
-        return config;
+        }        
     }
 };

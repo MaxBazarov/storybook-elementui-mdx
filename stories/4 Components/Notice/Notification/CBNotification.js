@@ -9,9 +9,9 @@ Vue.prototype.$notify = Notification;
 export default {
     name: 'CBNotification',    
     template: `
-    <a href="#" onclick="alert('ss')"><slot></slot></a>
+    <a href="#" onclick="this.show1();return false;"><slot></slot></a>
   `,
-    methods: {
+    methods: {        
         show1() {
             alert("sss")
              this.$notify({

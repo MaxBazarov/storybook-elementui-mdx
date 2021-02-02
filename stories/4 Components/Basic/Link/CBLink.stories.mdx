@@ -1,0 +1,106 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import CBLink from './CBLink';
+
+<Meta title="4 - Components/Basic/Link" component={CBLink} />
+
+# Introduction
+
+The next link properties can be specified:   
+- Type: default, info , primary, success, warning, danger 
+- Icon
+- Underline (true/false)
+- Disabled (true/false)
+
+# Types
+    
+<Preview>
+    <Story name="Default">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link >Default Link</el-link>'
+        }}
+    </Story>    
+     <Story name="Primary">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link type="primary">Primary Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Info">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link type="info">Info Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Warning">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link type="warning">Warning Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Danger">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link type="danger">Danger Link</el-link>'
+        }}
+    </Story> 
+</Preview>
+
+# Disabled
+    
+<Preview>
+    <Story name="DisabledDefault">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link disabled="true">Default Link</el-link>'
+        }}
+    </Story>    
+     <Story name="DisabledPrimary">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link disabled="true" type="primary">Primary Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledInfo">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link disabled="true" type="info">Info Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledWarning">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link disabled="true" type="warning">Warning Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledDanger">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link disabled="true" type="danger">Danger Link</el-link>'
+        }}
+    </Story> 
+</Preview>
+
+# Other
+    
+<Preview>
+    <Story name="OtherUnderline">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link :underline="false">No underline</el-link>'
+        }}
+    </Story>  
+    <Story name="OtherUnderlineDashed">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link><span class="cb-link-underline-dashed">Dashed underline</span></el-link>'
+        }}
+    </Story>   
+     <Story name="OtherIcon">
+        {{ 
+        components: { CBLink },                     
+        template: '<el-link icon="el-icon-fa-trash fas" type="danger">With icon</el-link>'
+        }}
+    </Story> 
+  
+</Preview>
