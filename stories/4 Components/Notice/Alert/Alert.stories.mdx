@@ -1,0 +1,123 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import Vue from 'vue';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+<Meta title="4 - Components/Notice/Alert"/>
+
+# Alert types
+
+<Preview>   
+    <Story name="TypeSuccess">
+        {{ 
+        template: `
+        <el-alert
+            title="Success alert"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>   
+     <Story name="TypeInfo">
+        {{ 
+        template: `
+        <el-alert
+            title="Info alert"
+            type="info"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>    
+     <Story name="TypeWarning">
+        {{ 
+        template: `
+        <el-alert
+            title="Warning alert"
+            type="warning"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story> 
+     <Story name="TypeError">
+        {{ 
+        template: `
+        <el-alert
+            title="Error alert"
+            type="error"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story> 
+</Preview>
+
+# Alert with icon and without
+
+<Preview>
+    <Story name="IconOn">
+        {{ 
+        template: `
+        <el-alert
+            title="Alert"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+    <Story name="IconOff">
+        {{ 
+        template: `
+        <el-alert
+            title="success alert"
+            type="success"
+            description="more text description"
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+</Preview>
+
+# Alert with description and without
+
+<Preview>
+    <Story name="DescriptionOn">
+        {{ 
+        template: `
+        <el-alert
+            title="Alert with description"
+            type="success"
+            description="more text description"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+    <Story name="DescriptionOff">
+        {{ 
+        template: `
+         <el-alert
+            title="Alert without description"
+            type="success"
+            show-icon
+        >
+        </el-alert>
+        `
+        }}
+    </Story>  
+</Preview>

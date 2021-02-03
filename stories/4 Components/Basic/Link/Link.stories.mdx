@@ -1,0 +1,101 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="4 - Components/Basic/Link" />
+
+# Introduction
+
+The next link properties can be specified:   
+- Type: default, info , primary, success, warning, danger 
+- Icon
+- Underline (true/false)
+- Disabled (true/false)
+
+# Types
+    
+<Preview>
+    <Story name="Default">
+        {{     
+        template: '<el-link >Default Link</el-link>'
+        }}
+    </Story>    
+     <Story name="Primary">
+        {{         
+        template: '<el-link type="primary">Primary Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Info">
+        {{         
+        template: '<el-link type="info">Info Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Warning">
+        {{         
+        template: '<el-link type="warning">Warning Link</el-link>'
+        }}
+    </Story> 
+     <Story name="Danger">
+        {{ 
+        
+        template: '<el-link type="danger">Danger Link</el-link>'
+        }}
+    </Story> 
+</Preview>
+
+# Disabled
+    
+<Preview>
+    <Story name="DisabledDefault">
+        {{ 
+        
+        template: '<el-link disabled="true">Default Link</el-link>'
+        }}
+    </Story>    
+     <Story name="DisabledPrimary">
+        {{ 
+        
+        template: '<el-link disabled="true" type="primary">Primary Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledInfo">
+        {{ 
+        
+        template: '<el-link disabled="true" type="info">Info Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledWarning">
+        {{ 
+        
+        template: '<el-link disabled="true" type="warning">Warning Link</el-link>'
+        }}
+    </Story> 
+     <Story name="DisabledDanger">
+        {{ 
+        
+        template: '<el-link disabled="true" type="danger">Danger Link</el-link>'
+        }}
+    </Story> 
+</Preview>
+
+# Other
+    
+<Preview>
+    <Story name="OtherUnderline">
+        {{ 
+        
+        template: '<el-link :underline="false">No underline</el-link>'
+        }}
+    </Story>  
+    <Story name="OtherUnderlineDashed">
+        {{ 
+        
+        template: '<el-link><span class="cb-link-underline-dashed">Dashed underline</span></el-link>'
+        }}
+    </Story>   
+     <Story name="OtherIcon">
+        {{ 
+        
+        template: '<el-link icon="el-icon-fa-trash fas" type="danger">With icon</el-link>'
+        }}
+    </Story> 
+  
+</Preview>

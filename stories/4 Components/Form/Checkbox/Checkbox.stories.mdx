@@ -1,0 +1,53 @@
+import { Meta, Preview, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="4 - Components/Form/Checkbox" />
+
+# Checkbox
+
+The next button properties can be specified:    
+Size: large, medium, small 
+Type:regular, with border, button-style
+
+# Sizes   
+ 
+<Preview>    
+    <Story name="Regular">
+        {{ template: `  
+        <div>
+            <el-checkbox class="cb-size-large" label="1">Large</el-checkbox>
+            <el-checkbox class="cb-size-medium" label="2">Medium</el-checkbox>
+            <el-checkbox class="cb-size-small" label="3">Small</el-checkbox>
+        </div>
+        `}}
+    </Story>     
+</Preview>
+
+# States   
+ 
+<Preview>    
+    <Story name="States">
+        {{ template: `  
+        <div>
+            <el-checkbox label="1">Enabled</el-checkbox>
+            <el-checkbox disabled label="2">Disabled</el-checkbox>
+        </div>
+        `}}
+    </Story>     
+</Preview>
+
+
+# Checkbox Buttons with border   
+ 
+<Preview>    
+    <Story name="Other">
+        {{ template: `  
+        <div>
+            <el-checkbox label="1" class="cb-size-large" border>Selected</el-checkbox>
+            <el-checkbox  label="2" class="cb-size-medium" size="medium"
+                border>
+                Unselected</el-checkbox>
+            <el-checkbox disabled  class="cb-size-small" size="small"label="disabled" border>Disabled</el-checkbox>
+        </div>
+        `}}
+    </Story>     
+</Preview>

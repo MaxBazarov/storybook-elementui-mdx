@@ -1,4 +1,5 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+<<<<<<< HEAD
 import Button from './Button';
 
 <Meta title="4 - Components/Basic/Button" component={Button} />
@@ -86,3 +87,186 @@ import Button from './Button';
   
 </Preview>
 
+=======
+
+<Meta title="4 - Components/Basic/Button" />
+
+# Introduction
+
+Button is a special widget to execute some action, for example - submit form, stop VPS or go to next  wizard step. Different button types have their own visual styles.
+
+There are three groups of buttons visual look: 
+1. Plain button: A typically rectangular material button. Choose it for buttons inside unclickable containers or outside of any container.
+2. Regular button: A button made of ink and does not lift. Choose it inside clickable containers, such as [Home Tile](/ui-kit/views/tile/home) or [On-Screen Notification](/app-kit/common/notifications/visualization#on-screen-notifications)
+3. Text buttons: TODO
+
+Also the next button properties can be specified:   
+ Align: left, center, right
+ Size: large, medium, small
+ Content: text, icon, menu icon
+
+# Visual Look 
+    
+<Preview>
+    <Story name="Plain">
+        {{ 
+        template: '<div>Plain buttons:</div>'
+        }}
+    </Story>
+    <Story name="PlainPrimary">
+        {{ 
+        
+        template: '<el-button type="primary" plain>Primary</el-button>'
+        }}
+    </Story>
+    <Story name="PlainDefault">
+        {{ 
+        
+        template: '<el-button type="default" plain>Default</el-button>'
+        }}
+    </Story>
+    <Story name="PlainWarning">
+        {{ 
+        
+        template: '<el-button type="warning" plain>Warning</el-button>'
+        }}
+    </Story>
+    <Story name="PlainDanger">
+        {{ 
+        
+        template: '<el-button type="danger" plain>Danger</el-button>'
+        }}
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Regular">
+        {{ 
+        
+        template: '<CBSpan>Regular buttons:</CBSpan>'
+        }}
+    </Story> 
+    <Story name="RegularPrimary">
+        {{ 
+        
+        template: '<el-button type="primary">Primary</el-button>'
+        }}
+    </Story>
+    <Story name="RegularDefault">
+        {{ 
+        
+        template: '<el-button type="default">Default</el-button>'
+        }}
+    </Story>
+    <Story name="RegularWarning">
+        {{ 
+            
+            template: '<el-button type="warning">Warning</el-button>'
+            }}
+    </Story>
+    <Story name="RegularDanger">
+        {{ 
+            
+            template: '<el-button type="danger">Danger</el-button>'
+        }}
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Text">
+        {{ 
+        
+        template: '<CBSpan>Text buttons:</CBSpan>'
+        }}
+    </Story> 
+    <Story name="TextPrimary">
+        {{ 
+        
+        template: '<el-button type="text primary">Primary</el-button>'
+        }}
+    </Story>
+    <Story name="TextDefault">
+        {{ 
+        
+        template: '<el-button type="text default">Default</el-button>'
+        }}
+    </Story>
+    <Story name="TextWarning">
+        {{ 
+            
+            template: '<el-button type="text warning">Warning</el-button>'
+            }}
+    </Story>
+    <Story name="TextDanger">
+        {{ 
+            
+            template: '<el-button type="text danger">Danger</el-button>'
+        }}
+    </Story>
+</Preview>
+
+
+# Sizes
+    
+<Preview>
+    <Story name="Size">
+        {{ 
+        
+        template: '<CBSpan>Sizes:</CBSpan>'
+        }}
+    </Story>
+    <Story name="SizeLarge">
+        {{ 
+        
+        template: '<el-button type="primary">Large</el-button>'
+        }}
+    </Story>
+    <Story name="SizeMedium">
+        {{ 
+        
+        template: '<el-button type="primary" size="medium">Medium</el-button>'
+        }}
+    </Story>
+    <Story name="SizeSmall">
+        {{ 
+        
+        template: '<el-button type="primary" size="small">Small</el-button>'
+        }}
+    </Story>
+</Preview>
+
+# Content
+    
+<Preview>
+    <Story name="Content">
+        {{ 
+        
+        template: '<CBSpan>Content:</CBSpan>'
+        }}
+    </Story> 
+     <Story name="ContentText">
+        {{ 
+        
+        template: '<el-button type="default">Text</el-button>'
+        }}
+    </Story>
+    <Story name="ContentIcon">
+        {{ 
+        
+        template: '<el-button type="default" icon="el-icon-fa-share fas"></el-button>'
+        }}
+    </Story>
+     <Story name="ContentIconText">
+        {{ 
+        
+        template: '<el-button type="default" icon="el-icon-fa-share fas">Icon+Text</el-button>'
+        }}
+    </Story>
+    <Story name="ContentTextActions">
+        {{ 
+        
+        template: '<el-button type="default">Text+Actions<i class="el-icon-fa-angle-down fas el-icon--right"/></el-button>'
+        }}
+    </Story>
+</Preview>
+>>>>>>> baza
