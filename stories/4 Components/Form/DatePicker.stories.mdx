@@ -1,0 +1,25 @@
+import { Meta, Preview, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="4 - Components/Form/DatePicker" />
+
+# DatePicker
+
+The next properties can be specified:    
+Size: large, medium, small 
+
+# Sizes   
+ 
+<Preview>    
+    <Story name="Regular">
+        {{ template: `  
+        <div>
+             <el-date-picker type="date" placeholder="Select date">
+            </el-date-picker>
+            <el-date-picker type="date" size="medium" placeholder="Select date">
+            </el-date-picker>
+            <el-date-picker type="date" size="mini" placeholder="Select date">
+            </el-date-picker>
+        </div>
+        `}}
+    </Story>     
+</Preview>
