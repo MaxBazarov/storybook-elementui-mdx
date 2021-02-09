@@ -1,0 +1,65 @@
+import { Meta, Preview, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="4 - Components/Form/Input" />
+
+# Checkbox
+
+<b>TODO: added v-model properties to enable dynamic</b>
+
+# Sizes   
+ 
+<Preview>    
+    <Story name="Sizes">
+        {{ template: `
+        <div width="">
+             <el-input placeholder="Large">
+            </el-input>
+            <el-input size="medium" placeholder="Medium">
+            </el-input>
+            <el-input size="small" placeholder="Small">
+            </el-input>
+        </div>
+        `}}
+    </Story>     
+</Preview>
+
+# States   
+ 
+<Preview>    
+    <Story name="States">
+        {{ template: `  
+        <div>
+            <el-input size="medium"
+                placeholder="Enabled"
+                >
+            </el-input>
+            <el-input size="medium"
+                placeholder="Disabled"
+                :disabled="true">
+            </el-input>
+        </div>
+        `}}
+    </Story>     
+</Preview>
+
+
+# Other features   
+ 
+<Preview>    
+    <Story name="Other">
+        {{ template: `  
+        <div>
+            <el-input size="medium"
+                placeholder="Clearable"
+                value="Clearable"
+                clearable>                
+            </el-input>
+            <el-input size="medium"
+                placeholder="With prefix"
+            >                
+                <i slot="prefix">USD</i>
+            </el-input>
+        </div>
+        `}}
+    </Story>     
+</Preview>
